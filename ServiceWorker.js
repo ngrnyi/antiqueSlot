@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Aviation Bomber 3DNew-0.1";
 const contentToCache = [
     "Build/buildforgit.loader.js",
-    "Build/buildforgit.framework.js.unityweb",
-    "Build/buildforgit.data.unityweb",
-    "Build/buildforgit.wasm.unityweb",
+    "Build/buildforgit.framework.js",
+    "Build/buildforgit.data",
+    "Build/buildforgit.wasm",
     "TemplateData/style.css"
 
 ];
