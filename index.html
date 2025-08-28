@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Aviation Bomber 3DNew</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="/antiqueSlot/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/antiqueSlot/TemplateData/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   </head>
   <body>
@@ -20,13 +20,13 @@
       <div id="unity-warning"> </div>
     </div>
     <script>
-      var buildUrl = "Build";
+      var buildUrl = "/antiqueSlot/Build";
       var loaderUrl = buildUrl + "/buildforgit.loader.js";
       var config = {
         dataUrl: buildUrl + "/buildforgit.data",
         frameworkUrl: buildUrl + "/buildforgit.framework.js",
         codeUrl: buildUrl + "/buildforgit.wasm",
-        streamingAssetsUrl: "StreamingAssets",
+        streamingAssetsUrl: "/antiqueSlot/StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Aviation Bomber 3DNew",
         productVersion: "0.1",
@@ -38,13 +38,13 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var warningBanner = document.querySelector("#unity-warning");
 
-      // Mobile device style
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       }
 
-      // Show loading bar
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
